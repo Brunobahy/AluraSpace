@@ -1,8 +1,10 @@
 import React from 'react'
 import open from './open.png'
-import favorito from './favorito.png'
+import inconFavoritoVazio from './favorito.png'
+import iconFavoritoCheio from './favorito2.png'
 
-export default function Card({conteudo, estilo}) {
+export default function Card({conteudo, estilo, funcao, expandir}) {
+
     return (
         <li className={estilo.galeria__card}>
             <img
@@ -14,8 +16,10 @@ export default function Card({conteudo, estilo}) {
             <div>
                 <p >{conteudo.creditos}</p>
                 <span >
-                    <img src={favorito} alt="Ícone coração de curtir" />
-                    <img src={open} alt="Ícone de abrir modal" />
+                    { conteudo.favorito ? <img style={{filter:"invert(1)"}} src={iconFavoritoCheio} onClick={() => funcao(conteudo.id)} alt="Ícone coração de curtir" />
+                     : <img  src={inconFavoritoVazio} onClick={() => funcao(conteudo.id)} alt="Ícone coração de curtir" />
+                     }
+                    <img onClick={() => expandir(conteudo.id)} src={open} alt="Ícone de abrir modal" />
                 </span>
             </div>
         </li>
