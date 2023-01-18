@@ -11,7 +11,7 @@ export default function Rodape() {
                 <a href="/"><img src={twitter} alt="twitter" /></a>
                 <a href="/"><img src={instagram} alt="instagram" /></a>
             </div>
-            <p className={styles.rodape__texto}>Desenvolvido por Alura.</p>
+            <p className={styles.rodape__texto}>Desenvolvido por Bruno Bahy.</p>
         </footer>
     )
 }
