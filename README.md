@@ -11,6 +11,9 @@ Projeto realizado durante as aulas do curso React com JavaScript: lidando com ar
 | :fire: Desafio     | https://cursos.alura.com.br/course/react-javascript-arquivos-estaticos
 
 
+![a](https://user-images.githubusercontent.com/110056385/213236786-01eca7eb-a49e-4f06-9e1d-1b8c4a6958a9.png)
+
+
 ## Detalhes do projeto
 
 Este projeto foi feito para durante o curso de React com JavaScript: lidando com arquivos estáticos.
